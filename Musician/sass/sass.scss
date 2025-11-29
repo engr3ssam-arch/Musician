@@ -1,0 +1,154 @@
+ $navColor: rgba(200, 200, 200, 0.4);
+ $fontFamily: monospace;
+ $fontSize:large;
+ $fontWeight:bold;
+ $textDecorationColor:black;
+ $textDecorationThickness:1px;
+ $textAlign:center;
+
+ %img-config {
+ margin-top: 70px;
+ height: 400px;
+ width: 100%;
+ filter: grayscale(0.7);
+} 
+
+%title{
+  
+  text-decoration: line-through;
+  text-decoration-color: $textDecorationColor;
+  text-decoration-thickness: $textDecorationThickness;
+  letter-spacing: 5px;
+  font-family:$fontFamily;
+  font-weight: 100;
+  font-size: 40px;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+ 
+}
+
+header{
+  background-image: url(../images/header-background.jpg);  
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+nav{
+  text-decoration: none;
+  background-color: $navColor;
+  height: 40px;
+  text-align: center;
+  padding-top: 10px;
+
+  & a{
+  margin-right: 30px;
+  font-family: $fontFamily;
+  color: gray;
+  font-size: $fontSize;
+  
+  &:hover{
+    color: black;
+    text-decoration: underline;
+  }
+
+  }
+}
+
+.main-title{
+ text-align: $textAlign;
+ & h1{
+  @extend %title;
+  color: #c69595;
+  
+ }
+ & p{
+    color: #989494;
+    font-size: smaller;
+}
+ 
+}
+.main-categories img{
+
+@extend %img-config;
+   
+ }
+.title p{
+  font-weight: $fontWeight;
+}
+
+.helland-silence{
+  display: flex;
+  justify-content: space-evenly;
+ 
+
+  & button{
+    background-image: url(../images/hellandScilenceButtonBackground.jpg);
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-size: large;
+    font-weight: $fontWeight;
+    border: 0;
+  }
+  & h4{
+    font-weight: $fontWeight;
+  }
+  & button:hover{
+    color:rebeccapurple;
+    cursor: pointer;
+  }
+}
+
+.night-vesion{
+  @extend .helland-silence;
+
+  & button{
+     background-image: url(../images/nightVisionButtonBackground.jpeg);
+   
+  }
+}
+
+.smoke-mirrors{
+   @extend .helland-silence;
+   & button{
+     background-image: url(../images/smokeMerrorButtonBackground.jpeg);
+   
+  }
+}
+.concert-tours-title {
+ text-align: $textAlign;
+  & h1{
+  @extend %title;
+    color: #89a9bc;
+  }
+
+}
+.smoke-mirrors-desc{
+  background-image: url(../images/concertToursBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(0.7);
+  padding-top: 100px;
+  padding-left: 100px;
+  height: 400px;
+
+  & p{
+    color: #2b2929;
+    font-size: smaller;
+  }
+  & button{
+    background: transparent;
+    width: 120px;
+    height: 40px;
+    font-weight: bold;
+    border: 2px solid #7f7777 ;
+  }
+  & button:hover{
+    background-color: #7f7777;
+  }
+  
+}
