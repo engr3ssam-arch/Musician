@@ -12,7 +12,9 @@
  width: 100%;
  filter: grayscale(0.7);
 } 
-
+span{
+  font-weight: $fontWeight;
+}
 %title{
   
   text-decoration: line-through;
@@ -151,4 +153,63 @@ nav{
     background-color: #7f7777;
   }
   
+}
+.latter-composition-title{
+  text-align: $textAlign;
+  & h1{
+  @extend %title;
+    color:black;
+  }
+}
+.indian-summer-desc{
+    background-color: #eeeeee; 
+    height: 298px; 
+   
+   & button{
+    height: 30px;
+    color: black;
+    background: transparent;
+    border: 1px solid darkgrey;
+    font-weight: bold;
+}
+   }
+
+.social-icon{
+ color: #7f7777;
+ display: inline;
+ float: right;
+ & p{
+  display: inline;
+ }
+}
+
+
+i{
+  margin-right: 30px;
+ 
+ 
+}
+.indian-summer{
+  display: flex;
+  margin-left: 200px;
+  height: 298px;
+  margin-top: 80px;
+
+}
+.indian-summer-desc{
+ padding-left: 10px;
+}
+.indian-summer-remix{
+  @extend .indian-summer ;
+
+}
+.indian-summer-remix-desc{
+  @extend .indian-summer-desc;
+
+}
+.chill-nation{
+  @extend .indian-summer;
+}
+.chill-nation-desc{
+@extend .indian-summer-desc
 }
