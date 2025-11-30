@@ -1,7 +1,171 @@
+.main-categories img {
+  margin-top: 70px;
+  height: 400px;
+  width: 100%;
+  filter: grayscale(0.7);
+}
+
+span {
+  font-weight: bold;
+}
+
+.latter-composition-title h1, .concert-tours-title h1, .main-title h1 {
+  text-decoration: line-through;
+  text-decoration-color: black;
+  text-decoration-thickness: 1px;
+  letter-spacing: 5px;
+  font-family: monospace;
+  font-weight: 100;
+  font-size: 40px;
+}
+
 body {
   box-sizing: border-box;
-  background-color: red;
-  font: 10px;
+  margin: 0;
+  width: 100%;
+}
+
+header {
+  background-image: url(../images/header-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+nav {
+  text-decoration: none;
+  background-color: rgba(200, 200, 200, 0.4);
+  height: 40px;
+  text-align: center;
+  padding-top: 10px;
+}
+nav a {
+  margin-right: 30px;
+  font-family: monospace;
+  color: gray;
+  font-size: large;
+}
+nav a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.main-title {
+  text-align: center;
+}
+.main-title h1 {
+  color: #c69595;
+}
+.main-title p {
+  color: #989494;
+  font-size: smaller;
+}
+
+.title p {
+  font-weight: bold;
+}
+
+.helland-silence, .smoke-mirrors, .night-vesion {
+  display: flex;
+  justify-content: space-evenly;
+}
+.helland-silence button, .smoke-mirrors button, .night-vesion button {
+  background-image: url(../images/hellandScilenceButtonBackground.jpg);
+  width: 150px;
+  height: 50px;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  border: 0;
+}
+.helland-silence h4, .smoke-mirrors h4, .night-vesion h4 {
+  font-weight: bold;
+}
+.helland-silence button:hover, .smoke-mirrors button:hover, .night-vesion button:hover {
+  color: rebeccapurple;
+  cursor: pointer;
+}
+
+.night-vesion button {
+  background-image: url(../images/nightVisionButtonBackground.jpeg);
+}
+
+.smoke-mirrors button {
+  background-image: url(../images/smokeMerrorButtonBackground.jpeg);
+}
+
+.concert-tours-title {
+  text-align: center;
+}
+.concert-tours-title h1 {
+  color: #89a9bc;
+}
+
+.smoke-mirrors-desc {
+  background-image: url(../images/concertToursBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(0.7);
+  padding-top: 100px;
+  padding-left: 100px;
+  height: 400px;
+}
+.smoke-mirrors-desc p {
+  color: #2b2929;
+  font-size: smaller;
+}
+.smoke-mirrors-desc button {
+  background: transparent;
+  width: 120px;
+  height: 40px;
+  font-weight: bold;
+  border: 2px solid #7f7777;
+}
+.smoke-mirrors-desc button:hover {
+  background-color: #7f7777;
+}
+
+.latter-composition-title {
+  text-align: center;
+}
+.latter-composition-title h1 {
+  color: black;
+}
+
+.indian-summer-desc, .chill-nation-desc, .indian-summer-remix-desc {
+  background-color: #eeeeee;
+  height: 298px;
+}
+.indian-summer-desc button, .chill-nation-desc button, .indian-summer-remix-desc button {
+  height: 30px;
+  color: black;
+  background: transparent;
+  border: 1px solid darkgrey;
+  font-weight: bold;
+}
+
+.social-icon {
+  color: #7f7777;
+  display: inline;
+  float: right;
+}
+.social-icon p {
+  display: inline;
+}
+
+i {
+  margin-right: 30px;
+}
+
+.indian-summer, .chill-nation, .indian-summer-remix {
+  display: flex;
+  margin-left: 200px;
+  height: 298px;
+  margin-top: 80px;
+}
+
+.indian-summer-desc, .chill-nation-desc, .indian-summer-remix-desc {
+  padding-left: 10px;
 }
 
 /*# sourceMappingURL=sass.css.map */
