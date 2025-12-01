@@ -5,11 +5,16 @@
   filter: grayscale(0.7);
 }
 
+footer, .history, .upcomming-events, .slider, .smoke-mirrors-desc {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 span {
   font-weight: bold;
 }
 
-.latter-composition-title h1, .concert-tours-title h1, .main-title h1 {
+footer h1, .history-title h1, .upcomming-events-title h1, .latter-composition-title h1, .concert-tours-title h1, .main-title h1 {
   text-decoration: line-through;
   text-decoration-color: black;
   text-decoration-thickness: 1px;
@@ -32,12 +37,27 @@ header {
   height: 600px;
 }
 
+.menu-container {
+  position: relative;
+}
+
+.menu-icon {
+  display: none;
+  float: right;
+  font-size: xx-large;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 nav {
   text-decoration: none;
   background-color: rgba(200, 200, 200, 0.4);
+  position: absolute;
   height: 40px;
   text-align: center;
   padding-top: 10px;
+  width: 100%;
 }
 nav a {
   margin-right: 30px;
@@ -103,8 +123,6 @@ nav a:hover {
 
 .smoke-mirrors-desc {
   background-image: url(../images/concertToursBackground.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   filter: grayscale(0.7);
   padding-top: 100px;
   padding-left: 100px;
@@ -147,7 +165,6 @@ nav a:hover {
 .social-icon {
   color: #7f7777;
   display: inline;
-  float: right;
 }
 .social-icon p {
   display: inline;
@@ -166,6 +183,208 @@ i {
 
 .indian-summer-desc, .chill-nation-desc, .indian-summer-remix-desc {
   padding-left: 10px;
+}
+
+.slider {
+  background-image: url(../images/sliderBackground.jpeg);
+  height: 500px;
+  filter: brightness(0.5);
+  text-align: center;
+  color: white;
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  padding-top: 100px;
+  position: relative;
+}
+.slider p {
+  color: #948a8a;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 35px;
+  background: white;
+  color: black;
+  border: none;
+  padding: 12px 18px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 90px;
+  height: 90px;
+}
+
+.arrow.left {
+  left: 0;
+}
+
+.arrow.right {
+  right: 0;
+}
+
+.arrow:hover {
+  color: white;
+  background-color: black;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.pagination {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+.pagination a {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.pagination a:hover {
+  background-color: black;
+  color: black;
+  border: white solid;
+  transform: scale(1.5);
+}
+
+.music-desc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 48%;
+  justify-content: center;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.desc1, .desc6, .desc5, .desc4, .desc3, .desc2 {
+  background-image: url(../images/desc1.jpeg);
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 200px;
+  padding-left: 5px;
+  padding-top: 20px;
+  font-size: 12px;
+  filter: contrast(0.5);
+}
+
+.upcomming-events {
+  background-image: url(../images/upcommingEventsBackground.jpeg);
+  text-align: start;
+  height: 600px;
+  filter: contrast(0.5);
+  padding-top: 50px;
+}
+
+.upcomming-events-title h1 {
+  color: #10557d;
+  text-align: center;
+}
+
+.upcomming-events-desc {
+  margin-left: 550px;
+}
+
+.p-color {
+  color: rgb(82, 78, 78);
+}
+
+.p-align {
+  margin-left: 40px;
+  font-size: 40px;
+  font-weight: 50;
+}
+
+.history {
+  background-image: url(../images/historyBackground.jpeg);
+  filter: contrast(0.5);
+  text-align: center;
+  height: 700px;
+  padding-top: 70px;
+}
+
+.history-title p {
+  color: #2b2929;
+  font-size: smaller;
+}
+
+footer {
+  background-image: url(../images/contactBackground.jpeg);
+  height: 500px;
+  filter: grayscale(0.8);
+  padding-top: 50px;
+  text-align: start;
+  padding-left: 500px;
+}
+footer p {
+  color: #2b2929;
+  font-size: smaller;
+}
+
+form input {
+  border: 0;
+  background-color: transparent;
+  color: #534f4f;
+  border-bottom: solid 2px black;
+  width: 200px;
+  margin-bottom: 20px;
+}
+form button {
+  border: 0;
+  background: transparent;
+  font-size: large;
+  font-weight: bold;
+}
+form button:hover {
+  background-color: black;
+  color: #eeeeee;
+}
+
+.contact-icon {
+  display: flex;
+  flex-direction: column;
+  margin-top: -130px;
+}
+.contact-icon i {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.contact-icon i:hover {
+  color: gray;
+}
+
+.scroll-top {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 20px;
+  top: 50%;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.scroll-top:hover {
+  background-color: black;
+  color: white;
+}
+
+/*smart phones & tablets*/
+@media (min-width: 481px) and (max-width: 767px) {
+  .menu-icon {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=sass.css.map */
